@@ -15,7 +15,6 @@ void reverseArray(int a[], int n){
      cout<<"enter "<<n<<" values"<<endl;
      for(int i=0;i<n;i++)
      cin>>a[i];
-     cout<<"hello"<<endl;
      reverseArray(a,n);
      cout<<"Reversed Array"<<endl;
      for(int i=0;i<n;i++){
