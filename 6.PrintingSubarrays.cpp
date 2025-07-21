@@ -22,3 +22,4 @@ void printSubarrays(int a[], int n){
      cin>>a[i];
      printSubarrays(a,n);
  }
+//O(N^3)
