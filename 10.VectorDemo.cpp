@@ -28,6 +28,7 @@ int main(){
     cout<<endl;
     
     //new vector where size is 10 and all elements are 7
+    //fill constructor
     vector <int> arr1(10,7);
     cout<<"array 1"<<endl;
     for(int i=0;i<arr1.size();i++)
