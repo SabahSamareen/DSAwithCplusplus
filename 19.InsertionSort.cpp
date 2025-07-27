@@ -2,10 +2,13 @@
 using namespace std;
 
 vector<int> insertionSort(vector<int> a){
-    int n=a.size(), i;
-    for(i=1;i<n;i++)
-        if(a[i]<a[i-1])
-            swap(a[i-1],a[i]);
+    int n=a.size(), i, j;
+    for(i=1;i<n;i++){
+        for(j=i-1;j>=0;j--){
+            if(a[i]<a[j])
+                swap(a[i],a[j]);
+        }
+    }
             
     return a;
 }
@@ -17,4 +20,3 @@ int main(){
     cout<<i<<" ";
     return 0;
 }
-
